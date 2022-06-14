@@ -1,0 +1,237 @@
+/***
+ *  Theme Name:  Blog
+ * Theme URI:  https://gspmarket.com/
+ * Author: Joshim 
+ * Author URI:  https://gspmarket.com/
+ * Version:  1.0
+ * Description:  This is the product of gspmarket
+ *  
+ * 
+ */
+html,body,header,div,section{
+	padding: 0; margin: 0; box-sizing: border-box;
+}
+
+/* Header  */
+.site-title a{
+  color: #fff; text-decoration: none;
+}
+.site-title a:hover{
+  color: #fff; text-decoration: none;
+}
+.nav-menu{
+  display: flex; top: 14px; position: relative;
+  z-index: 300;
+}
+.nav-menu li{
+  display: inline-block; margin: 0px;padding: 0px; position: relative;
+}
+.nav-menu li a{
+  text-decoration: none;
+  margin: 0; padding: 8px 12px; display: block; text-align: center;
+  font: sans-serif;  color: #fff;
+}
+.nav-menu li a:hover {
+  background: red;
+}
+.nav-menu .sub-menu{
+  position: absolute; min-width: 200px; background: gray;
+  display: none; margin: 0px; padding: 0px;
+}
+.nav-menu li:hover > .sub-menu{
+  display: block;
+}
+.sub-menu li{
+  display: block; list-style: none;
+}
+.sub-menu li a{
+   color: #fff; text-align: left;
+}
+.sub-menu li a:hover {
+  background: red; color: #fff;
+}
+svg{
+  
+}
+
+/**
+ *  Header Search And Menu Icon
+ * 
+ */
+._search-box{
+  margin-right: 5px; padding: 5px;
+}
+._menu-box{
+  margin: 0px 5px 0px 5px; padding: 5px;
+}
+._menu-box svg, ._search-box svg {
+   font-size: 28px; font-family: sans-serif; font-style: bold;
+}
+
+/**
+ * Search Section
+ */
+#search_header{
+  position: fixed; top: 0px; padding: 10px 20px; min-width: 100%; background: #333;
+  z-index: 200;
+}
+#search_section{
+  position: relative; top: 0px; background: gray; padding: 10px 20px;
+  z-index: 100; 
+}
+#search_results{
+ min-width: 100%; position: relative; top: 65px; padding: 10px 20px;
+ min-height: 500px;
+}
+#set_search_data{
+  
+}
+.search-data{
+  margin: 10px 0px; padding: 8px 10px; background: gray;
+}
+.search-data h3{
+  color: #fff;
+}
+/**
+ * 
+ * Sidebar-Menu 
+ */
+#sidebar_menu{
+  position: fixed; top: 0px; margin: 0; padding: 15px;
+  min-height: 100%; z-index: 500;
+} 
+
+@media screen and (max-width: 429px){
+ #sidebar_menu{
+  max-width: 80%;
+  min-width: 80%;
+ }
+}
+
+@media screen and (min-width: 430px) {
+ #sidebar_menu{
+  max-width: 350px;
+  min-width: 300px;
+ }
+}
+
+
+/*** Widget  ***/
+.sidebar-widget label{
+    color:#fff; font-weight:bold;
+}
+.widget-title{
+  background: #333; color: #fff; padding: 8px;
+}
+/* Home Content */
+.home-content{
+  padding: 5px; border: 1px solid #221;
+
+}
+.post-title{
+  background: #333; padding: 8px; 
+}
+.post-content{
+  padding: 8px; 
+}
+.read-more-div{
+  padding-left: 15px;
+}
+.post-bottom{
+    
+}
+
+/* Single post  */
+
+.single-post-bottom{
+  padding: 8px 5px;
+}
+/** Heart Design Start  **/
+ .heart-div{
+  padding: 0px 30px; position: relative; left: 0px;
+ }
+ .heart {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: auto;
+    transform: rotate(45deg);
+    animation: h 1s infinite;
+  }
+ .red {
+    position: absolute;
+    width: 66%;
+    height: 66%;
+    background: #7f8c8d;
+  }
+  
+  .c1 {
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+  }
+  .c2 {
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+  }
+  .r {
+    bottom: 0;
+    right: 0;
+  }
+  /** ========== Heart ending ======== **/
+
+  /* pagenations  */
+   .nav-links{
+    padding: 8px 12px;
+   }
+  .nav-links a {
+    padding: 4px 8px; background: #000; color: #fff;
+  }
+  .nav-links .current{ padding: 4px 8px; background: red; color: #fff; }
+
+  /**
+   * Comments styles 
+   */
+
+.c-comments__list li{
+  list-style: none; margin: 10px 0px; padding: 8px; border: 1px solid #123;
+}
+
+/* comment form */
+
+#comment {
+    position:relative; width:100%;
+}
+
+  /**
+   * 
+   * Footer Creadit 
+   */
+  #site-footer{
+   padding:12px 0px 6px 0px; text-align: center; background: #343a40;    
+ }
+  .footer-credits .copyright-date{ color: #fff; }
+  .footer-credits p{
+    display: inline-block; 
+  }
+
+  /**
+   * Custom Styles 
+   * 
+   */
+  .bg-gray{
+    background: gray;
+  }
+
+  /* animation with hide show */
+.fade-in {
+    -webkit-transition-duration: 700ms; /* Safari */
+    transition-duration: 700ms;
+} 
+._fade-out {
+    opacity: 0;
+    transition-property: opacity;
+    -webkit-transition-duration: 700ms; /* Safari */
+    transition-duration: 700ms;
+}
