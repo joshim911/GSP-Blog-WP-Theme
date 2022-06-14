@@ -9,7 +9,7 @@ if( ! defined('ABSPATH') ) : die("Access denied"); endif;
 
 if ( ! defined('wi_name')) define('wi_name', 'written_info');
 
-
+/* for woocommerce */
 add_action('after_setup_theme', 'remove_admin_bar');
     function remove_admin_bar() {
         show_admin_bar(false);
